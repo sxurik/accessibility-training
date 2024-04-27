@@ -76,6 +76,13 @@ input {
   display: none;
 }
 
+a,
+button {
+  &:focus {
+    outline: none !important;
+  }
+}
+
 .button {
   @extend %button;
 
