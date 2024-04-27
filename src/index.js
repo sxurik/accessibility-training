@@ -19,3 +19,15 @@ function handleTabClick(event) {
 }
 
 tabButtons.forEach(button => button.addEventListener('click', handleTabClick));
+
+const modalButtons = document.querySelectorAll('.modal-button');
+const modalCloseButtons = document.querySelectorAll('.modal-close');
+
+function showModal(event) {
+  event.stopImmediatePropagation();
+  const target = document.getElementById(event.target.attributes['data-target'].value);
+  target && target.classList.toggle('hidden');
+}
+
+modalButtons.forEach(button => button.addEventListener('click', showModal));
+modalCloseButtons.forEach(button => button.addEventListener('click', showModal));

@@ -141,12 +141,12 @@
           <div class="tab-panel is-active" id="panel-1" data-panel="stories">
             <div class="card-container">
               <div class="card">
-                <img src="./images/customer-story-1.jpg" class="modal-button">
+                <img src="./images/customer-story-1.jpg">
                 <div class="card-content">
                   <div class="card-title">Best customer's story</div>
                   <p>We have achieved customer satisfaction and income increase after having implemented accessibility.</p>
                   <p>That's a real magic!</p>
-                  <span class="button button-primary modal-button" data-target="modal-image1">Learn more</span>
+                  <button class="button button-primary modal-button" data-target="modal-image">Learn more</button>
                 </div>
               </div>
               <div class="card">
@@ -340,40 +340,28 @@
   </div>
 
   <div id="modal-card" class="modal hidden">
-    <div class="modal-background"></div>
-    <div class="modal-content is-tiny">
-      <div class="card">
-        <div class="card-image">
-          <div class="image is-4by3">
-            <img src="https://source.unsplash.com/random/?sig=2">
-          </div>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <div class="title is-4">Best airways</div>
-              <div class="subtitle is-6">Our way to success</div>
-            </div>
-          </div>
-          <div class="content">
-            <p>At the beginning we were a small company with two planes and no customers</p>
-            <p>After we implemented accessibility features everything changed</p>
-            <a>#responsive</a>
-            <br>
-            <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
-          </div>
-        </div>
+    <div class="modal-content">
+      <button class="modal-close" data-target="modal-card"></button>
+      <div class="modal-image">
+        <img src="https://source.unsplash.com/random/?sig=2">
+      </div>
+      <div class="content">
+        <div class="title">Best airways</div>
+        <div class="subtitle">Our way to success</div>
+        <p>At the beginning we were a small company with two planes and no customers</p>
+        <p>After we implemented accessibility features everything changed</p>
+        <a>#responsive</a>
+        <br>
+        <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
       </div>
     </div>
-    <button class="modal-close is-large"></button>
   </div>
 
-  <div id="modal-image1" class="modal hidden">
-    <div class="modal-background"></div>
+  <div id="modal-image" class="modal hidden">
     <div class="modal-content is-huge is-image">
+      <button class="modal-close" data-target="modal-image"></button>
       <img src="https://source.unsplash.com/random/?sig=1">
     </div>
-    <button class="modal-close is-large"></button>
   </div>
 
   <script async src="bundle.js"></script>
