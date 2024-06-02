@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Web Accessibility 2022</title>
+  <meta name="description" content="Web accessibility in mind. Web developers with extensive knowledge of modern Web techniques looking for an opportunity to work and upgrade.">
+  <meta name="robots" content="index, follow">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="header">
+  <nav class="skip-navigation-links" aria-label="Skip navigation links">
+    <ul>
+      <li><a href="#main">Skip to main content</a></li>
+      <li><a href="#subscribe">Skip to subscription form</a></li>
+      <li><a href="#about-us">Skip to about us</a></li>
+      <li><a href="#services">Skip to our services</a></li>
+      <li><a href="#achievements">Skip to our achievements</a></li>
+      <li><a href="#events">Skip to upcoming events</a></li>
+      <li><a href="#contacts">Skip to contacts</a></li>
+    </ul>
+  </nav>
+  <header class="header">
     <div class="container">
       <a href="/" class="logo-link">
-        <img src="./images/logo.png">
+        <img src="./images/logo.png" alt="Best Company home">
       </a>
 
-      <div id="navbarMenu" class="navbar">
-        <button class="navbar-mobile-button" data-target="navbarMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+      <nav id="navbarMenu" class="navbar">
         <ul class="navbar-list">
           <li class="navbar-list-item">
             <a href="/" class="navbar-link">Home</a>
@@ -41,31 +51,31 @@
             </ul>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div class="main">
+  <main class="main" id="main">
     <div class="title-wrapper">
       <div class="container">
-        <div class="title title-1 is-light text-center">We have web accessibility in mind</div>
+        <h1 class="title title-1 is-light text-center">We have web accessibility in mind</h1>
       </div>
     </div>
 
-    <div class="section">
+    <section class="section" id="subscribe">
       <div class="container">
-        <div class="title title-2 text-center">Would you like to get the latest news?</div>
+        <h2 class="title title-2 text-center">Would you like to get the latest news?</h2>
         <div class="subtitle text-center">Subscribe to our events, updates and more</div>
         <div class="field-subscribe">
-          <input class="input">
-          <a class="button button-primary">Notify Me</a>
+          <label>Email <input class="input"></label>
+          <button class="button button-primary">Notify Me</button>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section is-bg-secondary">
+    <section class="section is-bg-secondary" id="about-us">
       <div class="container">
-        <div class="title title-2 text-center">About Us</div>
+        <h2 class="title title-2 text-center">About Us</h2>
         <div class="subtitle text-center">We of all trades, master of "some"</div>
         <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
           field of
@@ -73,66 +83,73 @@
           Looking for an opportunity to work and upgrade, as well as being involved in an organization that
           believes
           in gaining a competitive edge and giving back to the community.</p>
-        <div class="title title-3">OUR HISTORY</div>
-        <p>Since 1989<sup><a>[1]</a></sup>, we deliver high quality solutions to make your business more accessible.</p>
-        <div class="title title-4">1989</div>
+        <h3 class="title title-3">OUR HISTORY</h3>
+        <p>Since 1989<sup>[1]</sup>, we deliver high quality solutions to make your business more accessible.</p>
+        <h4 class="title title-4">1989</h4>
         <p>On February 1989, seventeen people met to talk, ski, relax, and try to find common ground.</p>
         <ul>
           <li>- We all felt privileged to work with a group of people who held a set of compatible value.</li>
           <li>- We all want to deliver good products to customers.</li>
         </ul>
-        <div class="title title-4">2022</div>
-        <p>Generally we have achieved <a>all our major goals</a>. And we are ready to help you to achieve yours</p>
+        <h4 class="title title-4">2022</h4>
+        <p>Generally we have achieved all our major goals. And we are ready to help you to achieve yours</p>
         <div class="blockquote">Success usually comes to those who are too busy looking for it. - Henry David Thoreau</div>
         <p>We believe in investing in people. For 30+ years, the company has been expanding its expertise worldwide through numerous educational activities and materials to help beginners in tech gain in-demand skills.</p>
-        <div class="title title-4">2023</div>
-        <p>Please take a llok at our plans</p>
+        <h4 class="title title-4">2023</h4>
+        <p>Please take a look at our plans</p>
         <table>
-          <tr>
-            <td>Header</td>
-            <td>Header</td>
-          </tr>
-          <tr>
-            <td>cell</td>
-            <td>cell</td>
-          </tr>
-          <tr>
-            <td>cell</td>
-            <td>cell</td>
-          </tr>
+          <caption>
+            Plans
+          </caption>
+          <thead>
+            <tr>
+              <th>Header</th>
+              <th>Header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>cell</td>
+              <td>cell</td>
+            </tr>
+            <tr>
+              <td>cell</td>
+              <td>cell</td>
+            </tr>
+          </tbody>
         </table>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section" id="services">
       <div class="container">
-        <div class="title title-2 text-center">Our services</div>
+        <h2 class="title title-2 text-center">Our services</h2>
         <div class="subtitle text-center">We help our customers to increase value</div>
 
         <figure>
-          <img src="./images/IMG_5067_72DPI-RGB_.jpg">
-          <img src="./images/iStock_73271969_web.jpg">
+          <img src="./images/IMG_5067_72DPI-RGB_.jpg" alt="">
+          <img src="./images/iStock_73271969_web.jpg" alt="">
           <figcaption>
             Figure 1: Some attractive pictures to ensure our customers
           </figcaption>
         </figure>
       </div>
-    </div>
+    </section>
 
-    <div class="section section-no-bottom-padding is-bg-interactive">
+    <section class="section section-no-bottom-padding is-bg-interactive" id="achievements">
       <div class="container">
-        <div class="title title-2 text-center is-light">Our achievements</div>
+        <h2 class="title title-2 text-center is-light">Our achievements</h2>
         <div class="subtitle text-center is-light">We are always ready to tell you about our success</div>
         <div class="tab-list">
-        <span class="tab is-active" id="stories">
+        <button class="tab is-active" id="stories">
           Success stories
-        </span>
-        <span class="tab" id="team">
+        </button>
+        <button class="tab" id="team">
           Our team
-        </span>
-        <span class="tab" id="video">
+        </button>
+        <button class="tab" id="video">
           Video
-        </span>
+        </button>
       </div>
       </div>
 
@@ -141,21 +158,21 @@
           <div class="tab-panel is-active" id="panel-1" data-panel="stories">
             <div class="card-container">
               <div class="card">
-                <img src="./images/customer-story-1.jpg">
+                <img src="./images/customer-story-1.jpg" alt="">
                 <div class="card-content">
-                  <div class="card-title">Best customer's story</div>
+                  <h3 class="card-title">Best customer's story</h3>
                   <p>We have achieved customer satisfaction and income increase after having implemented accessibility.</p>
                   <p>That's a real magic!</p>
                   <button class="button button-primary modal-button" data-target="modal-image">Learn more</button>
                 </div>
               </div>
               <div class="card">
-                <img src="./images/customer-story-2.jpg">
+                <img src="./images/customer-story-2.jpg" alt="">
                 <div class="card-content">
-                  <div class="card-title">Other Best customer's story.</div>
+                  <h3 class="card-title">Other Best customer's story.</h3>
                   <p>We were not so sure in success but we have had lots of new customers after implementing accessibility.</p>
                   <p>We will recommend Best Company to our friends!</p>
-                  <span class="button button-primary modal-button" data-target="modal-card">Learn more</span>
+                  <button class="button button-primary modal-button" data-target="modal-card">Learn more</button>
                 </div>
               </div>
             </div>
@@ -181,176 +198,187 @@
           </div>
 
           <div class="tab-panel" id="panel-3" hidden data-panel="video">
-            <div class="title title-3 text-center">Inspiring video</div>
+            <h3 class="title title-3 text-center">Inspiring video</h3>
             <div class="embed-container image">
               <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section" id="events">
       <div class="container">
-        <div class="title title-2 text-center">Upcoming events</div>
+        <h2 class="title title-2 text-center">Upcoming events</h2>
         <div class="subtitle is-5 text-center">Outcoming dates for the best options</div>
 
         <div class="tile is-ancestor">
           <div class="tile is-parent">
             <div class="tile is-child box">
               <div class="image">
-                <img src="./images/access.jpg" width="350" height="250">
+                <img src="./images/access.jpg" width="350" height="250"  alt="">
               </div>
-              <p class="title">Accessibility event in Los Angeles</p>
+              <h3 class="title">Accessibility event in Los Angeles</h3>
               <p class="subtitle">Fri 27 Nov 2023</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
           <div class="tile is-parent">
             <div class="tile is-child box">
               <div class="image">
-                <img src="./images/images.jpg" width="350" height="250">
+                <img src="./images/images.jpg" width="350" height="250"  alt="Access A11Y. Our input, our independence">
               </div>
-              <p class="title">Accessibility event in Paris</p>
+              <h3 class="title">Accessibility event in Paris</h3>
               <p class="subtitle">Fri 27 Nov 2023</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section is-bg-light">
+    <section class="section is-bg-light" id="contacts">
       <div class="container">
-        <div class="title title-2 text-center">Contact us</div>
+        <h2 class="title title-2 text-center">Contact us</h2>
         <div class="subtitle text-center">Don't hesitate, ask anything</div>
 
         <form class="contact-form">
-          <div class="field">
-            <label class="label">Name</label>
-            <input class="input" type="text" placeholder="Text input">
-          </div>
-
-          <div class="field">
-            <label class="label">Username</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text">
-              <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
-              </span>
+          <fieldset class="fieldset">
+            <legend>Personal information</legend>
+            <div class="field">
+              <label class="label">
+                Name
+                <input class="input" type="text" placeholder="Text input">
+              </label>
             </div>
-          </div>
 
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-              <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-              <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
-            </span>
-            </div>
-            <p class="help is-danger">This email is invalid</p>
-          </div>
-
-          <div class="field">
-            <label class="label">Subject</label>
-            <div class="control">
-              <div class="select">
-                <select>
-                  <option>Select dropdown</option>
-                  <option>With options</option>
-                </select>
+            <div class="field">
+              <label class="label" for="username">Username</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input is-success" type="text" id="username">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
               </div>
             </div>
-          </div>
 
-          <div class="field">
-            <label class="label">Message</label>
-            <div class="control">
-              <textarea class="textarea" placeholder="Textarea"></textarea>
+            <div class="field">
+              <label class="label" for="email">Email</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="email">
+                <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+                <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+              </div>
+              <p class="help is-danger">This email is invalid</p>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="field">
-            <div class="control">
-              <label class="form-control">
-                <input type="checkbox">
-                I agree to the <a>terms and conditions</a>
-              </label>
+          <fieldset class="fieldset">
+            <legend>Message</legend>
+            <div class="field">
+              <label class="label" for="subject">Subject</label>
+              <div class="control">
+                <div class="select">
+                  <select id="subject">
+                    <option>Select dropdown</option>
+                    <option>With options</option>
+                  </select>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="field">
-            <div class="control">
-              <label class="form-control">
-                <input type="radio" name="question">
-                Yes
-              </label>
-              <label class="form-control">
-                <input type="radio" name="question">
-                No
-              </label>
+            <div class="field">
+              <label class="label" for="message">Message</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Textarea" id="message"></textarea>
+              </div>
             </div>
-          </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Consents</legend>
+            <div class="field">
+              <div class="control">
+                <label class="form-control">
+                  <input type="checkbox">
+                  I agree to the terms and conditions
+                </label>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <label class="form-control">
+                  <input type="radio" name="question" value="yes">
+                  Yes
+                </label>
+                <label class="form-control">
+                  <input type="radio" name="question" value="no">
+                  No
+                </label>
+              </div>
+            </div>
+          </fieldset>
 
           <div class="actions">
-            <button class="button button-primary">Submit</button>
+            <button class="button button-primary" type="submit">Submit</button>
             <button class="button button-secondary">Cancel</button>
           </div>
         </form>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <div class="footer">
+  <footer class="footer">
     <div class="container">
-      <div class="footer-nav">
+      <nav class="footer-nav">
         <ul class="footer-list">
           <li class="footer-list-item">
             <div class="title-medium"><b>News</b></div>
             <ul>
-              <li><a href="https://www.w3.org/TR/WCAG22/">Latest changes in specification</a></li>
+              <li><a href="https://www.w3.org/TR/WCAG22/" target="_blank">Latest changes in specification <i class="fas fa-external-link-alt"></i><span class="visually-hidden">Opens in a new window</span></a></li>
               <li><a href="#">Our new courses and trainings</a></li>
             </ul>
           </li>
           <li class="footer-list-item">
             <div class="title-medium"><b>Help</b></div>
             <ul>
-              <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/">Useful links</a></li>
+              <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/" target="_blank">Useful links <i class="fas fa-external-link-alt"></i><span class="visually-hidden">Opens in a new window</span></a></li>
               <li><a href="#">How to find us</a></li>
             </ul>
           </li>
         </ul>
-      </div>
+      </nav>
 
       <div class="footer-content">
         <div class="social">
-          <a><i class="fab fa-github-alt fa-2x"></i></a>
-          <a><i class="fab fa-youtube fa-2x"></i></a>
+          <a href="https://github.com/" target="_blank"><i class="fab fa-github-alt fa-2x"></i><span class="visually-hidden">Opens in a new window</span></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-2x"></i><span class="visually-hidden">Opens in a new window</span></a>
         </div>
-        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT <i class="fas fa-external-link-alt"></i><span class="visually-hidden">Opens in a new window</span></a>.</p>
       </div>
     </div>
-  </div>
+  </footer>
 
   <div id="modal-card" class="modal hidden">
     <div class="modal-content">
       <button class="modal-close" data-target="modal-card"></button>
       <div class="modal-image">
-        <img src="https://source.unsplash.com/random/?sig=2">
+        <img src="https://source.unsplash.com/random/?sig=2" alt="">
       </div>
       <div class="content">
-        <div class="title">Best airways</div>
+        <h2 class="title">Best airways</h2>
         <div class="subtitle">Our way to success</div>
         <p>At the beginning we were a small company with two planes and no customers</p>
         <p>After we implemented accessibility features everything changed</p>
-        <a>#responsive</a>
+        #responsive
         <br>
         <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
       </div>
@@ -360,7 +388,7 @@
   <div id="modal-image" class="modal hidden">
     <div class="modal-content is-huge is-image">
       <button class="modal-close" data-target="modal-image"></button>
-      <img src="https://source.unsplash.com/random/?sig=1">
+      <img src="https://source.unsplash.com/random/?sig=1" alt="">
     </div>
   </div>
 

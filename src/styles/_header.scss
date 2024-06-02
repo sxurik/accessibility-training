@@ -2,6 +2,22 @@
 @import "variables";
 @import "sets";
 
+.skip-navigation-links {
+  height: 0;
+
+  & a {
+    color: white;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:focus {
+      top: 0;
+    }
+  }
+}
+
 .header {
   padding: rem.convert(20px 0);
 
@@ -114,7 +130,6 @@
           padding: rem.convert(8px 16px);
 
           color: $main-color;
-          cursor: pointer;
         }
       }
 
@@ -122,32 +137,28 @@
         .sublist {
           display: block;
 
-          li {
-            cursor: pointer;
-          }
-
           a {
             text-decoration: none;
             color: $main-color;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }
     }
 
     &-link {
-      @extend %button;
-
-      border-color: $main-color-light;
       color: $main-color-light;
+      text-decoration: none;
 
       &:visited {
-        border-color: $main-color-light;
         color: $main-color-light;
       }
 
       &:hover {
-        color: $main-color;
-        background: $main-color-light;
+        text-decoration: underline;
       }
     }
   }
