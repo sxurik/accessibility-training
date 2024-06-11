@@ -3,7 +3,7 @@
 @import "sets";
 
 .main {
-// Common classes  
+// Common classes
 .is-bg-light {
   background: $main-bg-light;
 }
@@ -246,6 +246,10 @@ text-align: center;
 
   background: $main-color-light;
   box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+
+  .fieldset {
+    width: 100%;
+  }
 
   .field {
     width: 100%;
