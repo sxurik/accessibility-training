@@ -28,12 +28,12 @@
         <img src="./images/logo.png" alt="Best Company home">
       </a>
 
-      <nav id="navbarMenu" class="navbar">
+      <nav id="navbarMenu" class="navbar" aria-label="Main Navigation">
         <ul class="navbar-list">
           <li class="navbar-list-item">
             <a href="/" class="navbar-link">Home</a>
           </li>
-          <li class="navbar-list-item" id="services_sub">
+          <li class="navbar-list-item" id="services_sub" aria-haspopup="true">
             <a href="#" class="navbar-link">Services</a>
             <ul class="sublist" hidden data-panel="services_sub">
               <li><a href="#">Design</a></li>
@@ -43,7 +43,7 @@
               <li><a href="#">Optimize</a></li>
             </ul>
           </li>
-          <li class="navbar-list-item" id="stories_sub">
+          <li class="navbar-list-item" id="stories_sub" aria-haspopup="true">
             <a href="#" class="navbar-link">Success stories</a>
             <ul class="sublist" hidden data-panel="stories_sub">
               <li><a href="#">Best stories</a></li>
@@ -62,9 +62,9 @@
       </div>
     </div>
 
-    <section class="section" id="subscribe">
+    <section class="section" id="subscribe" aria-labelledby="latest-news-header">
       <div class="container">
-        <h2 class="title title-2 text-center">Would you like to get the latest news?</h2>
+        <h2 class="title title-2 text-center" id="latest-news-header">Would you like to get the latest news?</h2>
         <div class="subtitle text-center">Subscribe to our events, updates and more</div>
         <div class="field-subscribe">
           <label>Email <input class="input"></label>
@@ -73,9 +73,9 @@
       </div>
     </section>
 
-    <section class="section is-bg-secondary" id="about-us">
+    <section class="section is-bg-secondary" id="about-us" aria-labelledby="about-us-header">
       <div class="container">
-        <h2 class="title title-2 text-center">About Us</h2>
+        <h2 class="title title-2 text-center" id="about-us-header">About Us</h2>
         <div class="subtitle text-center">We of all trades, master of "some"</div>
         <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
           field of
@@ -121,9 +121,9 @@
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="section" id="services" aria-labelledby="our-services-header">
       <div class="container">
-        <h2 class="title title-2 text-center">Our services</h2>
+        <h2 class="title title-2 text-center" id="our-services-header">Our services</h2>
         <div class="subtitle text-center">We help our customers to increase value</div>
 
         <figure>
@@ -136,26 +136,26 @@
       </div>
     </section>
 
-    <section class="section section-no-bottom-padding is-bg-interactive" id="achievements">
+    <section class="section section-no-bottom-padding is-bg-interactive" id="achievements" aria-labelledby="our-achievements-header">
       <div class="container">
-        <h2 class="title title-2 text-center is-light">Our achievements</h2>
+        <h2 class="title title-2 text-center is-light" id="our-achievements-header">Our achievements</h2>
         <div class="subtitle text-center is-light">We are always ready to tell you about our success</div>
         <div class="tab-list">
-        <button class="tab is-active" id="stories">
+        <button class="tab is-active" id="stories" aria-controls="success-stories-panel">
           Success stories
         </button>
-        <button class="tab" id="team">
+        <button class="tab" id="team" aria-controls="our-team-panel">
           Our team
         </button>
-        <button class="tab" id="video">
+        <button class="tab" id="video" aria-controls="video-panel">
           Video
         </button>
       </div>
       </div>
 
       <div class="tab-panel-container is-bg-secondary">
-        <div class="container">
-          <div class="tab-panel is-active" id="panel-1" data-panel="stories">
+        <div class="container" >
+          <div class="tab-panel is-active" data-panel="stories" id="success-stories-panel">
             <div class="card-container">
               <div class="card">
                 <img src="./images/customer-story-1.jpg" alt="A young woman checking her phone">
@@ -163,7 +163,7 @@
                   <h3 class="card-title">Best customer's story</h3>
                   <p>We have achieved customer satisfaction and income increase after having implemented accessibility.</p>
                   <p>That's a real magic!</p>
-                  <button class="button button-primary modal-button" data-target="modal-image">Learn more</button>
+                  <button class="button button-primary modal-button" data-target="modal-image" aria-haspopup="true">Learn more</button>
                 </div>
               </div>
               <div class="card">
@@ -172,23 +172,23 @@
                   <h3 class="card-title">Other Best customer's story.</h3>
                   <p>We were not so sure in success but we have had lots of new customers after implementing accessibility.</p>
                   <p>We will recommend Best Company to our friends!</p>
-                  <button class="button button-primary modal-button" data-target="modal-card">Learn more</button>
+                  <button class="button button-primary modal-button" data-target="modal-card" aria-haspopup="true">Learn more</button>
                 </div>
               </div>
             </div>
         </div>
 
-          <div class="tab-panel" id="panel-2" hidden data-panel="team">
+          <div class="tab-panel" hidden data-panel="team" id="our-team-panel" aria-hidden="true">
             <div class="columns medias">
               <div class="column">
-                <i class="fab fa-empire fa-4x"></i>
+                <i class="fab fa-empire fa-4x" aria-hidden="true"></i>
                 <div class="content">
                   <h3>Solution architect</h3>
                   <p>Please read about our team happiness</p>
                 </div>
               </div>
               <div class="column">
-                <i class="fab fa-github-alt fa-4x"></i>
+                <i class="fab fa-github-alt fa-4x" aria-hidden="true"></i>
                 <div class="content">
                   <h3>Business Analyst</h3>
                   <p>Please read about successful implementation of AI based tools in Business Analysts daily routine</p>
@@ -197,19 +197,19 @@
             </div>
           </div>
 
-          <div class="tab-panel" id="panel-3" hidden data-panel="video">
+          <div class="tab-panel" hidden data-panel="video" id="video-panel" aria-hidden="true">
             <h3 class="title title-3 text-center">Inspiring video</h3>
             <div class="embed-container image">
-              <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen title="vimeo"></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="events">
+    <section class="section" id="events" aria-labelledby="upcoming-events-header">
       <div class="container">
-        <h2 class="title title-2 text-center">Upcoming events</h2>
+        <h2 class="title title-2 text-center" id="upcoming-events-header">Upcoming events</h2>
         <div class="subtitle is-5 text-center">Outcoming dates for the best options</div>
 
         <div class="tile is-ancestor">
@@ -237,9 +237,9 @@
       </div>
     </section>
 
-    <section class="section is-bg-light" id="contacts">
+    <section class="section is-bg-light" id="contacts" aria-labelledby="contact-us-header">
       <div class="container">
-        <h2 class="title title-2 text-center">Contact us</h2>
+        <h2 class="title title-2 text-center" id="contact-us-header">Contact us</h2>
         <div class="subtitle text-center">Don't hesitate, ask anything</div>
 
         <form class="contact-form">
@@ -257,10 +257,10 @@
               <div class="control has-icons-left has-icons-right">
                 <input class="input is-success" type="text" id="username">
                 <span class="icon is-small is-left">
-                  <i class="fas fa-user"></i>
+                  <i class="fas fa-user" aria-hidden="true"></i>
                 </span>
                 <span class="icon is-small is-right">
-                  <i class="fas fa-check"></i>
+                  <i class="fas fa-check" aria-hidden="true"></i>
                 </span>
               </div>
             </div>
@@ -268,15 +268,15 @@
             <div class="field">
               <label class="label" for="email">Email</label>
               <div class="control has-icons-left has-icons-right">
-                <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="email">
+                <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="email" aria-describedby="email-help">
                 <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
               </span>
                 <span class="icon is-small is-right">
-                <i class="fas fa-exclamation-triangle"></i>
+                <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
               </span>
               </div>
-              <p class="help is-danger">This email is invalid</p>
+              <p class="help is-danger" id="email-help" aria-live="polite">This email is invalid</p>
             </div>
           </fieldset>
 
@@ -338,19 +338,19 @@
 
   <footer class="footer">
     <div class="container">
-      <nav class="footer-nav">
+      <nav class="footer-nav" aria-label="Footer Navigation">
         <ul class="footer-list">
           <li class="footer-list-item">
             <div class="title-medium"><b>News</b></div>
             <ul>
-              <li><a href="https://www.w3.org/TR/WCAG22/" target="_blank">Latest changes in specification <i class="fas fa-external-link-alt"></i><span class="visually-hidden">Opens in a new window</span></a></li>
+              <li><a href="https://www.w3.org/TR/WCAG22/" target="_blank">Latest changes in specification <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden">Opens in a new window</span></a></li>
               <li><a href="#">Our new courses and trainings</a></li>
             </ul>
           </li>
           <li class="footer-list-item">
             <div class="title-medium"><b>Help</b></div>
             <ul>
-              <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/" target="_blank">Useful links <i class="fas fa-external-link-alt"></i><span class="visually-hidden">Opens in a new window</span></a></li>
+              <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/" target="_blank">Useful links <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden">Opens in a new window</span></a></li>
               <li><a href="#">How to find us</a></li>
             </ul>
           </li>
@@ -359,23 +359,23 @@
 
       <div class="footer-content">
         <div class="social">
-          <a href="https://github.com/" target="_blank"><i class="fab fa-github-alt fa-2x"></i><span class="visually-hidden">Opens in a new window</span></a>
-          <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-2x"></i><span class="visually-hidden">Opens in a new window</span></a>
+          <a href="https://github.com/" target="_blank"><i class="fab fa-github-alt fa-2x" aria-hidden="true"></i><span class="visually-hidden">Opens in a new window</span></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i><span class="visually-hidden">Opens in a new window</span></a>
         </div>
-        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT <i class="fas fa-external-link-alt"></i><span class="visually-hidden">Opens in a new window</span></a>.</p>
+        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden">Opens in a new window</span></a>.</p>
       </div>
     </div>
   </footer>
 
-  <div id="modal-card" class="modal hidden">
+  <div id="modal-card" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="dialog-1-title" aria-describedby="dialog-1-desc">
     <div class="modal-content">
       <button class="modal-close" data-target="modal-card"></button>
       <div class="modal-image">
         <img src="https://source.unsplash.com/random/?sig=2" alt="Random image">
       </div>
       <div class="content">
-        <h2 class="title">Best airways</h2>
-        <div class="subtitle">Our way to success</div>
+        <h2 class="title" id="dialog-1-title">Best airways</h2>
+        <div class="subtitle" id="dialog-1-desc">Our way to success</div>
         <p>At the beginning we were a small company with two planes and no customers</p>
         <p>After we implemented accessibility features everything changed</p>
         #responsive
@@ -385,7 +385,7 @@
     </div>
   </div>
 
-  <div id="modal-image" class="modal hidden">
+  <div id="modal-image" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="modal-content is-huge is-image">
       <button class="modal-close" data-target="modal-image"></button>
       <img src="https://source.unsplash.com/random/?sig=1" alt="Random image">
