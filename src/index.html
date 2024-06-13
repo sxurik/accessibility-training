@@ -29,13 +29,13 @@
       </a>
 
       <nav id="navbarMenu" class="navbar" aria-label="Main Navigation">
-        <ul class="navbar-list">
-          <li class="navbar-list-item">
+        <ul class="navbar-list" role="menubar">
+          <li class="navbar-list-item" role="menuitem">
             <a href="/" class="navbar-link">Home</a>
           </li>
-          <li class="navbar-list-item" id="services_sub" aria-haspopup="true">
+          <li class="navbar-list-item" id="services_sub" aria-haspopup="true" aria-expanded="false" role="menuitem">
             <a href="#" class="navbar-link">Services</a>
-            <ul class="sublist" hidden data-panel="services_sub">
+            <ul class="sublist" hidden data-panel="services_sub" aria-hidden="true">
               <li><a href="#">Design</a></li>
               <li><a href="#">Consult</a></li>
               <li><a href="#">Engineer</a></li>
@@ -43,9 +43,9 @@
               <li><a href="#">Optimize</a></li>
             </ul>
           </li>
-          <li class="navbar-list-item" id="stories_sub" aria-haspopup="true">
+          <li class="navbar-list-item" id="stories_sub" aria-haspopup="true" aria-expanded="false" role="menuitem">
             <a href="#" class="navbar-link">Success stories</a>
-            <ul class="sublist" hidden data-panel="stories_sub">
+            <ul class="sublist" hidden data-panel="stories_sub" aria-hidden="true">
               <li><a href="#">Best stories</a></li>
               <li><a href="#">Others</a></li>
             </ul>
@@ -140,22 +140,22 @@
       <div class="container">
         <h2 class="title title-2 text-center is-light" id="our-achievements-header">Our achievements</h2>
         <div class="subtitle text-center is-light">We are always ready to tell you about our success</div>
-        <div class="tab-list">
-        <button class="tab is-active" id="stories" aria-controls="success-stories-panel">
-          Success stories
-        </button>
-        <button class="tab" id="team" aria-controls="our-team-panel">
-          Our team
-        </button>
-        <button class="tab" id="video" aria-controls="video-panel">
-          Video
-        </button>
-      </div>
+        <div class="tab-list"  role="tablist" aria-labelledby="our-achievements-header">
+          <button class="tab is-active" id="stories" aria-controls="success-stories-panel" role="tab" aria-selected="true">
+            Success stories
+          </button>
+          <button class="tab" id="team" aria-controls="our-team-panel" role="tab" aria-selected="false" tabindex="-1">
+            Our team
+          </button>
+          <button class="tab" id="video" aria-controls="video-panel" role="tab" aria-selected="false" tabindex="-1">
+            Video
+          </button>
+        </div>
       </div>
 
       <div class="tab-panel-container is-bg-secondary">
         <div class="container" >
-          <div class="tab-panel is-active" data-panel="stories" id="success-stories-panel">
+          <div class="tab-panel is-active" data-panel="stories" id="success-stories-panel" role="tabpanel" aria-labelledby="stories" tabindex="0">
             <div class="card-container">
               <div class="card">
                 <img src="./images/customer-story-1.jpg" alt="A young woman checking her phone">
@@ -176,9 +176,9 @@
                 </div>
               </div>
             </div>
-        </div>
+          </div>
 
-          <div class="tab-panel" hidden data-panel="team" id="our-team-panel" aria-hidden="true">
+          <div class="tab-panel" hidden data-panel="team" id="our-team-panel" aria-hidden="true" role="tabpanel" aria-labelledby="team" tabindex="0">
             <div class="columns medias">
               <div class="column">
                 <i class="fab fa-empire fa-4x" aria-hidden="true"></i>
@@ -197,7 +197,7 @@
             </div>
           </div>
 
-          <div class="tab-panel" hidden data-panel="video" id="video-panel" aria-hidden="true">
+          <div class="tab-panel" hidden data-panel="video" id="video-panel" aria-hidden="true" role="tabpanel" aria-labelledby="video" tabindex="0">
             <h3 class="title title-3 text-center">Inspiring video</h3>
             <div class="embed-container image">
               <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen title="vimeo"></iframe>

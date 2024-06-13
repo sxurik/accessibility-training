@@ -117,7 +117,6 @@
         left: 0;
         z-index: 100;
 
-        display: none;
         min-width: 100%;
         width: max-content;
         padding: rem.convert(8px);
@@ -133,17 +132,13 @@
         }
       }
 
-      &:hover {
-        .sublist {
-          display: block;
+      & .sublist {
+        a {
+          text-decoration: none;
+          color: $main-color;
 
-          a {
-            text-decoration: none;
-            color: $main-color;
-
-            &:hover {
-              text-decoration: underline;
-            }
+          &:hover {
+            text-decoration: underline;
           }
         }
       }
